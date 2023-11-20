@@ -1,0 +1,32 @@
+class rectangle :
+    def __init__(self):
+
+        self.longeur=0
+        self.largeur=0
+    
+    def __init__(self,longeur,largeur):    
+   
+        self.longeur=longeur 
+        self.largeur=largeur
+    def __init__(self,oldobject):
+        self.longeur=oldobject.longeur
+        self.largeur=oldobject.largeur
+    def perimetre(self):
+        return 2*(self.longeur+self.largeur)
+    
+    def air(self):
+        return(self.longeur + self.largeur)
+    
+    def iscarre(self):
+        if self.longeur==self.largeur:
+            return "il s'agit d'un carre"
+        else:
+            return "il s'agit pas d'un carre" 
+    def affichage(self):
+        print("longeur:",self.longeur) 
+        print("largeur:",self.largeur) 
+        print("perimetre:",self.perimetre())
+        print("air:",self.air())
+        print("iscarre:",self.iscarre())
+
+
